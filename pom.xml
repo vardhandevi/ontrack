@@ -9,10 +9,10 @@
 	<description>Project to demonstrate GitHub Maven plugins</description>
 	<url>https://github.com/kevinsawicki/github-maven-example</url>
 
-	<issueManagement>
+	<!-- <issueManagement>
 		<url>https://github.com/kevinsawicki/github-maven-example/issues</url>
 		<system>GitHub Issues</system>
-	</issueManagement>
+	</issueManagement> -->
 
 	<licenses>
 		<license>
@@ -23,16 +23,16 @@
 	</licenses>
 
 	<scm>
-		<url>https://github.com/kevinsawicki/github-maven-example</url>
-		<connection>scm:git:git://github.com/kevinsawicki/github-maven-example.git</connection>
-		<developerConnection>scm:git:git@github.com:kevinsawicki/github-maven-example.git</developerConnection>
+		<url>https://github.com/vardhandevi/ontrack</url>
+		<connection>scm:git:git://github.com/vardhandev/ontrack.git</connection>
+		<developerConnection>scm:git:git@github.com:vadhandevi/ontrack.git</developerConnection>
 	</scm>
 	<developers>
 		<developer>
-			<email>vardhandevi09@@gmail.com</email>
+			<email>vardhandevi09@gmail.com</email>
 			<name>vardhan devi</name>
 			<url>https://github.com/vardhandevi</url>
-			<id>vadrhandevi</id>
+			<id>vardhandevi</id>
 		</developer>
 	</developers>
 
