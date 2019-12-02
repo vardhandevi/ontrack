@@ -1,0 +1,55 @@
+<settings xmylns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0                                                           http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <mirrors>
+        <mirror>
+        <!--This sends everything else to /public -->
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+            <url>http://35.232.119.217:8081/repository/maven-public/</url>
+        </mirror>
+    </mirrors>
+
+    <activeProfiles>
+        <!--make the profile active all the time -->
+        <activeProfile>nexus</activeProfile>
+    </activeProfiles>
+
+    <profiles>
+        <profile>
+            <id>nexus</id>
+          <repositories>
+          <repository>
+          <id>central</id>
+          <url>http://maven.apache.org</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+          </repository>
+            </repositories>
+
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <url>http://maven.apache.org</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>true</enabled></snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+
+    <servers>
+      <server>
+       <id>releases</id>
+       <username>deployment</username>
+       <password>deployment123</password>
+      </server>
+      <server>
+        <id>snapshots</id>
+        <username>deployment</username>
+        <password>deployment123</password>
+      </server>
+    </servers>
+
+</settings> 
