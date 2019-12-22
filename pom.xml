@@ -2,31 +2,23 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.github.vardhan</groupId>
-	<artifactId>github-maven-example</artifactId>
-	<version>0.1-SNAPSHOT</version>
-	<name>GitHub Maven Plugin Example</name>
-	<description>Project to demonstrate GitHub Maven plugins</description>
-	<url>https://github.com/kevinsawicki/github-maven-example</url>
+	
+  <groupId>ontrack_groupid</groupId>
+  <artifactId>ontrack_artifact</artifactId>
+  <version>1.0-SNAPSHOT</version>
 
-	<!-- <issueManagement>
-		<url>https://github.com/kevinsawicki/github-maven-example/issues</url>
-		<system>GitHub Issues</system>
-	</issueManagement> -->
-
-	<licenses>
-		<license>
-			<name>MIT License</name>
-			<url>http://www.opensource.org/licenses/mit-license.php</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-
-	<scm>
-		<url>https://github.com/vardhandevi/ontrack</url>
-		<connection>scm:git:git://github.com/vardhandev/ontrack.git</connection>
-		<developerConnection>scm:git:git@github.com:vadhandevi/ontrack.git</developerConnection>
-	</scm>
+  <name>javademo</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+ 
+  <distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>admin</name>
+      <url>http://104.198.130.184:8081/#admin/repository</url>
+    </repository>
+  </distributionManagement>
+	
 	<developers>
 		<developer>
 			<email>vardhandevi09@gmail.com</email>
@@ -42,25 +34,6 @@
 
 	<build>
 		<plugins>
-		<!--	<plugin>
-				<groupId>com.github.github</groupId>
-				<artifactId>downloads-maven-plugin</artifactId>
-				<version>0.6</version>
-				<configuration>
-					<description>Official ${project.name} build of the ${project.version} release</description>
-					<override>true</override>
-					<includeAttached>true</includeAttached>
-					<server>github</server>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>upload</goal>
-						</goals>
-						<phase>install</phase>
-					</execution>
-				</executions>
-			</plugin>  -->
 			<plugin>
 				<groupId>com.github.github</groupId>
 				<artifactId>site-maven-plugin</artifactId>
